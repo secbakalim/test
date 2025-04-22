@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yemek Testi</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Yemek Tercihi Testi</h1>
+    <form action="/sonuc" method="POST">
+        <p>1. Hangi ülke mutfağını istersiniz?</p>
+        <input type="radio" name="mutfak" value="italya">İtalya<br>
+        <input type="radio" name="mutfak" value="polonya">Polonya<br>
+        <input type="radio" name="mutfak" value="turkiye">Türkiye<br>
+
+        <p>2. Beslenme tarzın nedir?</p>
+        <input type="radio" name="beslenme" value="vegan">Vegan<br>
+        <input type="radio" name="beslenme" value="vejetaryen">Vejetaryen<br>
+        <input type="radio" name="beslenme" value="hepcil">Hepçil<br>
+        <input type="radio" name="beslenme" value="pesketaryen">Pesketaryen<br>
+
+        <p>3. Yemeğini nasıl pişmiş tüketirsin?</p>
+        <input type="radio" name="pisme" value="az">Az pişmiş<br>
+        <input type="radio" name="pisme" value="cok">Çok pişmiş<br>
+        <input type="radio" name="pisme" value="orta">Ortalama<br>
+        <input type="radio" name="pisme" value="pismemis">Pişmemiş<br>
+
+        <p>4. Ne tür bir işle ilgileniyorsun?</p>
+        <input type="radio" name="is" value="agir">Çalışma şartları ağır<br>
+        <input type="radio" name="is" value="masa">Hafif masa başı<br>
+        <input type="radio" name="is" value="hafif">Hafif<br>
+        <input type="radio" name="is" value="orta">Ortalama<br>
+
+        <p>5. Kaç yaşındasın?</p>
+        <input type="radio" name="yas" value="18alti">18 ve altı<br>
+        <input type="radio" name="yas" value="19-25">19-25<br>
+        <input type="radio" name="yas" value="26-35">26-35<br>
+        <input type="radio" name="yas" value="35ustu">35 ve üstü<br>
+
+        <p>6. Spor yapıyor musun?</p>
+        <input type="radio" name="spor" value="evet">Evet<br>
+        <input type="radio" name="spor" value="hayir">Hayır<br>
+        <input type="radio" name="spor" value="bazen">Bazen<br>
+        <input type="radio" name="spor" value="nadir">Nadir<br>
+
+        <p>7. Farklı tarzlar denemeyi sever misin?</p>
+        <input type="radio" name="deneme" value="evet">Evet<br>
+        <input type="radio" name="deneme" value="hayir">Hayır<br>
+
+        <br><button type="submit">Sonucu Göster</button>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head><title>Hoş Geldiniz</title></head>
+<body>
+    <h1>Yemek Testi</h1>
+    <form action="/test">
+        <button type="submit">Teste Başla</button>
+    </form>
+</body>
+</html>

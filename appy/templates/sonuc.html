@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yemek Önerisi</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container result">
+    <h1>Önerilen Yemek</h1>
+    {% if yemek %}
+      <h2>{{ yemek }}</h2>
+      <img src="{{ url_for('static', filename=gorsel) }}" alt="{{ yemek }}" class="yemek-img">
+    {% else %}
+      <p>Üzgünüz, bu tercihlere uygun yemek bulunamadı.</p>
+    {% endif %}
+    <a href="/">Başa Dön</a>
+  </div>
+</body>
+</html>

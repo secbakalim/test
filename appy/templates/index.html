@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yemek Testi</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Hangi Yemek Sana Göre?</h1>
+    <form method="POST" action="/sonuc">
+      <label>1. Hangi ülkenin mutfağını istersiniz?</label>
+      <select name="ulke" required>
+        <option value="turkiye">Türkiye</option>
+        <option value="italya">İtalya</option>
+        <option value="polonya">Polonya</option>
+      </select>
+
+      <label>2. Beslenme tarzın nedir?</label>
+      <select name="tarz" required>
+        <option value="vegan">Vegan</option>
+        <option value="vejetaryen">Vejetaryen</option>
+        <option value="pesketaryen">Pesketaryen</option>
+        <option value="hepcil">Hepçil</option>
+      </select>
+
+      <label>3. Yemeğini nasıl pişmiş tüketirsin?</label>
+      <select name="pisirme" required>
+        <option value="firin">Fırında</option>
+        <option value="kizartma">Kızartma</option>
+        <option value="haslama">Haşlama</option>
+      </select>
+
+      <label>4. Ne tür bir işle ilgileniyorsun?</label>
+      <select name="is">
+        <option value="agir">Çalışma şartları ağır</option>
+        <option value="masa">Hafif masa başı</option>
+        <option value="hafif">Hafif</option>
+        <option value="ortalama">Ortalama</option>
+      </select>
+
+      <label>5. Kaç yaşındasın?</label>
+      <select name="yas">
+        <option value="18alt">18 ve altı</option>
+        <option value="19-25">19-25</option>
+        <option value="26-35">26-35</option>
+        <option value="35ust">35 ve üstü</option>
+      </select>
+
+      <label>6. Spor yapıyor musun?</label>
+      <select name="spor">
+        <option value="evet">Evet</option>
+        <option value="hayir">Hayır</option>
+        <option value="bazen">Bazen</option>
+        <option value="nadir">Nadir</option>
+      </select>
+
+      <label>7. Farklı tarzlar denemeyi sever misin?</label>
+      <select name="deneme">
+        <option value="evet">Evet</option>
+        <option value="hayir">Hayır</option>
+      </select>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+</body>
+</html>
